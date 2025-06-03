@@ -5,39 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfólio INF 2025</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<style>
-  body {
-      font-family: sans-serif;
-  }
-  .header-custom {
-      background-color: #003f5c;
-      color: white;
-      text-align: center;
-  }
-  .heading-custom {
-      color: #003f5c;
-      border-bottom: 2px solid #ff6361;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-  }
-  .nav-custom .nav-link {
-      color: white !important;
-      text-transform: uppercase;
-      font-weight: 600;
-      padding: 10px 15px;
-  }
-  .nav-custom .nav-link:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 5px;
-  }
-  footer {
-      background-color: #f2f2f2;
-      color: #003f5c;
-      padding: 20px 0;
-      font-size: 0.9em;
-      text-align: center;
-  }
-</style>
+ <!-- CSS personalizado -->
+ <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
@@ -274,19 +243,21 @@
 
 <section id="extensao" class="py-4">
       <h2 class="heading-custom">Projetos de Extensão</h2>
-      <ul>
-          <li>Desde 2018, o INF promoveu mais de 90 projetos/cursos de extensão:</li>
-          <li>2025</li>
+      <p>Desde 2018, o INF promoveu mais de 90 projetos/cursos de extensão:</p>
+      <input type="text" id="searchInput" placeholder="Pesquisar projetos...">
+      <ul id="listaExtensao">
+          
+          <h5><strong>2025</strong></h5>
           <li>Treinamentos e competições em programação esportiva</li>
           <li>Formação de Professores para Alfabetização de Crianças Cegas pelo Sistema Braille</li>
-          <li>2024</li>
+          <li><strong>2024</strong></li>
           <li>Organização e Exposição do Museu de Informática e Computação</li>
           <li>Tópicos Avançados sobre Teste e Garantia de Qualidade de Software</li>
           <li>Engenharia de Dados para a Era da Inteligência Artificial: MLOps, Big Data e DevOps</li>
-          <li>2022</li>
+          <li><strong>2022</strong></li>
           <li>Hackathon Instituto de Informática - HackaINF</li>
           <li>Redes Sociais, Aplicações e Internet: Você sabia?</li>
-          <li>2021</li>
+          <li><strong>2021</strong></li>
           <li>Dinâmicas Territoriais: Análise Situacional e Interpretação de Dados</li>
           <li>Microcurso 13: Repositórios e sistemas de registro eletrônico em saúde</li>
           <li>Appenha - Aplicativo de defesa da mulher</li>
@@ -315,7 +286,7 @@
           <li>Microcurso 2: Rede Nacional de Dados em Saúde: o que precisamos saber?</li>
           <li>Microcurso 1: Trajetória da Saúde Digital no Brasil</li>
           <li>Letramento Digital 60+</li>
-          <li>2020</li>
+          <li><strong>2020</strong></li>
           <li>#Fale aí!</li>
           <li>Edição Especial em Revista dos Trabalhos da VII ERIGO 2019</li>
           <li>XIV Reunião Regional da FeSBE</li>
@@ -338,7 +309,7 @@
           <li>Educação Em Tempos De Pandemia: Matutar É Preciso Socializar: Popularização do Saber Produzido em Goiás - Parceria entre Universidade, Sociedade Brasileira para o Progresso da Ciência, Regional Goiás (SBPC/GO) e Escolas Públicas</li>
           <li>XX Jornada Goiana em Engenharia de Software</li>
           <li>15º Congresso Brasileiro de Sistemas</li>
-          <li>2019</li>
+          <li><strong>2019</strong></li>
           <li>Apresentação dos resultados e dos produtos oriundos do projeto de extensão e de pesquisa Educação Digital: Políticas, Leitura, Produção Textual, Identidade e Letramento Digital com Trabalhadoras/a Terceirizadas/os da UFG.</li>
           <li>III Encontro do Seminário de Visualização de Informações com Aplicações, Teoria e Otimização</li>
           <li>Exposição "Enigma: Mulheres na Computação"</li>
@@ -401,6 +372,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubqM6ARg9W+C8aZV7LMa9I+rQ/TLdfzGtmFfF7on+d06KZg" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="js/scripts.js" ></script>   
 
 </body>
 </html>
