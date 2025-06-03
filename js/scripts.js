@@ -1,11 +1,23 @@
-  const input = document.getElementById('searchInput');
-  const lista = document.getElementById('listaExtensao');
-  const itens = lista.getElementsByTagName('li');
+const input = document.getElementById('searchInput');
+const accordionItems = document.querySelectorAll('.accordion-item');
 
-  input.addEventListener('keyup', function() {
-    const filtro = input.value.toLowerCase();
-    for (let i = 0; i < itens.length; i++) {
-      const texto = itens[i].textContent.toLowerCase();
-      itens[i].style.display = texto.includes(filtro) ? '' : 'none';
-    }
+input.addEventListener('input', function () {
+  const termo = this.value.toLowerCase();
+
+  accordionItems.forEach(item => {
+    const lis = item.querySelectorAll('li');
+    let algumVisivel = false;
+
+    lis.forEach(li => {
+      const texto = li.textContent.toLowerCase();
+      if (texto.includes(termo)) {
+        li.style.display = '';
+        algumVisivel = true;
+      } else {
+        li.style.display = 'none';
+      }
+    });
+
+    item.style.display = algumVisivel ? '' : 'none';
   });
+});

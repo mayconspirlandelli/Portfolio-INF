@@ -2,6 +2,10 @@ body {
     font-family: sans-serif;
 }
 
+#searchInput {
+    margin-bottom: 20px;
+    max-width: 600px;
+
 
 input[type="text"] {
     padding: 8px;
@@ -12,7 +16,7 @@ input[type="text"] {
     border-radius: 5px;
   }
 
-  
+
 .header-custom {
     background-color: #003f5c;
     color: white;
