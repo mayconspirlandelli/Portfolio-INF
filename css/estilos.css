@@ -20,6 +20,26 @@ input[type="text"] {
     background-color: #003f5c;
     color: white;
     text-align: center;
+    
+}
+
+.header-custom .container {
+    display: flex;
+    justify-content: center; /* Centraliza o título */
+    align-items: center; /* Alinha verticalmente */
+    position: relative;
+}
+
+.header-custom h1 {
+    flex-grow: 1; /* Faz o título ocupar o espaço disponível */
+    text-align: center; /* Centraliza o texto */
+}
+
+.header-custom img {
+    width: 160px; /* Ajuste conforme necessário */
+    height: auto;
+    position: absolute;
+    right: 20px; /* Mantém a imagem fixa no lado direito */
 }
 
 .heading-custom {

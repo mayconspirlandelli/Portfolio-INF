@@ -10,8 +10,9 @@
 <body>
 
 <header class="header-custom">
-  <div class="container py-3">
+  <div class="container d-flex justify-content-between align-items-center py-3">
     <h1>Portfólio INF 2025</h1>
+    <img src="img/INF-03.png" alt="logo inf" width="80" height="80">
   </div>
 </header>
 
@@ -42,7 +43,7 @@
   </section>
 
   <section id="graduacao" class="py-4">
-    <h2 class="heading-custom">Cursos de Graduação</h2>
+    <h2 class="heading-custom">Graduação</h2>
     <ul>
       <li><strong>Ciência da Computação:</strong> Curso tradicional e mais antigo do instituto com foco técnico e científico. Tem sido consistentemente reconhecido por sua qualidade, alcançando Conceito 5 no Enade em diversas avaliações anteriores e Conceito 4 na avaliação mais recente, em 2017.</li><br>
       <li><strong>Sistemas de Informação:</strong>  forma profissionais empreendedores, capazes de atuar em todas as etapas do ciclo de vida de sistemas de informação em organizações, sejam públicas ou privadas.Obteve Conceito 4 no Enade de 2017</li><br>
@@ -62,18 +63,11 @@
   </section>
 
   <section id="pesquisa-financiados" class="py-4">
-    <h2 class="heading-custom">Projetos com Financiamento / Ano de Contratação</h2>
-    <iframe src="lista-de-projetos-financiados.html" width="100%" height="800" style="border: none;"></iframe>
+    <iframe src="projetos-pesquisa.html" width="100%" height="400" style="border: none;"></iframe>
   </section>
-
-  <section id="pesquisa-sem-financiamento" class="py-4">
-    <h2 class="heading-custom">Projetos Relevantes Sem Financiamento</h2>
-    <iframe src="lista-projetos-nao-financiados.html" width="100%" height="800" style="border: none;"></iframe>
-  </section>
-
-
+ 
   <section id="orgaos" class="py-4">
-    <h2 class="heading-custom">Ações de Extensão</h2>
+    <h2 class="heading-custom">Orgãos Complementares</h2>
 <p class="text-justify">O INF promove ações de extensão que aproximam a universidade da sociedade, incluindo projetos educacionais, tecnológicos e sociais.</p>
   </section>
     <h4 id="Ceia" class="heading-custom">CEIA</h4>
@@ -146,43 +140,53 @@
 </section>
 
 
-  <h2 class="heading-custom">Projetos de Extensão</h2>
-  <p>Desde 2018, o INF promoveu mais de 90 projetos/cursos de extensão: </p>
-  <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar projetos...">
-  <div class="accordion mt-3" id="accordionExtensao">
-    <div class="accordion-item" data-ano="2025">
-      <h2 class="accordion-header" id="heading2025-ext">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025-ext" aria-expanded="true" aria-controls="collapse2025-ext">
-          2025
-        </button>
-      </h2>
-      <div id="collapse2025-ext" class="accordion-collapse collapse show" aria-labelledby="heading2025-ext" data-bs-parent="#accordionExtensao">
-        <div class="accordion-body">
-          <ul>
-            <li>Treinamentos e competições em programação esportiva</li>
-            <li>Formação de Professores para Alfabetização de Crianças Cegas pelo Sistema Braille</li>
-          </ul>
+ <h2 class="heading-custom">Projetos de Extensão</h2>
+<p>Desde 2018, o INF promoveu mais de 90 projetos/cursos de extensão:</p>
+
+<div class="accordion mt-3" id="accordionExtensao">
+
+    <!-- Seção 2025 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2025-ext">
+            <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#collapse2025-ext" 
+                    aria-expanded="false" aria-controls="collapse2025-ext">
+                2025
+            </button>
+        </h2>
+        <div id="collapse2025-ext" class="accordion-collapse collapse" 
+             aria-labelledby="heading2025-ext" data-bs-parent="#accordionExtensao">
+            <div class="accordion-body">
+                <ul>
+                    <li>Treinamentos e competições em programação esportiva</li>
+                    <li>Formação de Professores para Alfabetização de Crianças Cegas pelo Sistema Braille</li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="accordion-item" data-ano="2024">
-      <h2 class="accordion-header" id="heading2024-ext">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2024-ext" aria-expanded="false" aria-controls="collapse2024-ext">
-          2024
-        </button>
-      </h2>
-      <div id="collapse2024-ext" class="accordion-collapse collapse" aria-labelledby="heading2024-ext" data-bs-parent="#accordionExtensao">
-        <div class="accordion-body">
-          <ul>
-            <li>Organização e Exposição do Museu de Informática e Computação</li>
-            <li>Tópicos Avançados sobre Teste e Garantia de Qualidade de Software</li>
-            <li>Engenharia de Dados para a Era da Inteligência Artificial: MLOps, Big Data e DevOps</li>
-          </ul>
+    <!-- Seção 2024 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2024-ext">
+            <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#collapse2024-ext" 
+                    aria-expanded="false" aria-controls="collapse2024-ext">
+                2024
+            </button>
+        </h2>
+        <div id="collapse2024-ext" class="accordion-collapse collapse" 
+             aria-labelledby="heading2024-ext" data-bs-parent="#accordionExtensao">
+            <div class="accordion-body">
+                <ul>
+                    <li>Organização e Exposição do Museu de Informática e Computação</li>
+                    <li>Tópicos Avançados sobre Teste e Garantia de Qualidade de Software</li>
+                    <li>Engenharia de Dados para a Era da Inteligência Artificial: MLOps, Big Data e DevOps</li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+
+</div>
 
   <div class="mt-4 text-center">
     <a href="projetos-extensao.html" class="btn btn-outline-primary">Ver anos anteriores</a>
@@ -195,7 +199,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/script.js"></script>
+
 
 </body>
 </html>
