@@ -25,9 +25,9 @@ input[type="text"] {
 
 .header-custom .container {
     display: flex;
-    justify-content: center; /* Centraliza o título */
-    align-items: center; /* Alinha verticalmente */
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .header-custom h1 {
@@ -36,12 +36,10 @@ input[type="text"] {
 }
 
 .header-custom img {
-    width: 160px; /* Ajuste conforme necessário */
+    width: 120px;  /* ou menor se precisar */
     height: auto;
-    position: absolute;
-    right: 20px; /* Mantém a imagem fixa no lado direito */
+    margin-left: 10px;
 }
-
 .heading-custom {
     color: #003f5c;
     border-bottom: 2px solid #ff6361;
@@ -67,4 +65,10 @@ footer {
     padding: 20px 0;
     font-size: 0.9em;
     text-align: center;
+}
+
+.accordion-collapse.expandido {
+  max-height: 500px !important;  /* altura maior para facilitar a visualização */
+  overflow-y: auto;              /* barra de rolagem vertical se passar dessa altura */
+  transition: max-height 0.3s ease;
 }
