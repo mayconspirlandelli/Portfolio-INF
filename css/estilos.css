@@ -72,3 +72,6 @@ footer {
   overflow-y: auto;              /* barra de rolagem vertical se passar dessa altura */
   transition: max-height 0.3s ease;
 }
+h5 strong, h5 b {
+  color: rgb(94, 94, 99);
+}
