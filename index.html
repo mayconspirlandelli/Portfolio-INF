@@ -12,7 +12,7 @@
 <header class="header-custom">
   <div class="container d-flex justify-content-between align-items-center py-3">
     <h1>Portfólio INF 2025</h1>
-    <img src="img/INF-03.png" alt="logo inf" width="80" height="80">
+    <img src="img/INF-03.png" alt="Logo INF" class="logo-inf">
   </div>
 </header>
 
@@ -30,6 +30,29 @@
         <li class="nav-item"><a class="nav-link" href="#orgaos">Órgãos Complementares</a></li>
         <li class="nav-item"><a class="nav-link" href="#accordionExtensao">Extensão</a></li>
       </ul>
+      <!-- Botão Voltar ao Topo -->
+<button id="scrollToTopBtn" title="Voltar ao topo">
+  <img src="voltar-ao-topo.png" alt="Voltar ao topo">
+</button>
+
+<script>
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  // Mostrar/esconder o botão com fade
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+
+  // Rolagem suave até o topo
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
     </div>
   </div>
 </nav>
@@ -58,12 +81,32 @@
   </section>
 
   <section id="projPesquisa" class="py-4">
-    <h2 class="heading-custom">Projetos de Pesquisa</h2>
-    <p>Nos últimos anos, o INF deu um grande salto em pesquisa e inovação. Os projetos desenvolvidos envolvem professores e alunos e abrangem áreas como saúde, agronegócio, software e inteligência artificial. Muitos são realizados em cooperação com outras universidades e financiados por empresas e entidades como FAPEG, CNPq, Capes e EMBRAPII.</p>
-  </section>
+  <h2 class="heading-custom">Projetos de Pesquisa</h2>
+  <p>Nos últimos anos, o INF deu um grande salto em pesquisa e inovação. Os projetos desenvolvidos envolvem professores e alunos e abrangem áreas como saúde, agronegócio, software e inteligência artificial. Muitos são realizados em cooperação com outras universidades e financiados por empresas e entidades como FAPEG, CNPq, Capes e EMBRAPII.</p>
+</section>
 
-  <section id="pesquisa-financiados" class="py-4">
-  <iframe id="iframePesquisa" src="projetos-pesquisa.html" width="100%" style="border:none; height: 150px;"></iframe>
+<section id="pesquisa-financiados" class="py-4">
+  <div id="conteudoPesquisa" class="container text-start">
+    <p>Carregando projetos...</p>
+  </div>
+</section>
+
+<script>
+  // Carrega automaticamente o conteúdo de projetos-pesquisa.html
+  fetch("projetos-pesquisa.html")
+    .then(response => {
+      if (!response.ok) throw new Error("Erro ao carregar o conteúdo");
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById("conteudoPesquisa").innerHTML = html;
+    })
+    .catch(err => {
+      document.getElementById("conteudoPesquisa").innerHTML =
+        "<p>Não foi possível carregar os projetos no momento.</p>";
+    });
+</script>
+
 
 
  
