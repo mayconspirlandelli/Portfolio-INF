@@ -235,7 +235,7 @@ h5 b {
 #scrollToTopBtn img {
   width: 28px;
   height: 28px;
-  transform: rotate(180deg); /* seta para cima */
+  transform: none; /* seta para cima */
 }
 
 /* Quando visível */
